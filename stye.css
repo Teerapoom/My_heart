@@ -1,0 +1,228 @@
+h1 {
+    color: rgb(237, 75, 75);
+    }
+.nav-item_footer i img {
+width: 45px;/* Adjust the desired width */
+height: 45px;/* Adjust the desired height */
+margin-right: 10px;/* Adjust the desired spacing */
+        }
+
+.nav-link {
+    color: #FF6D60;
+}
+body {
+    background-color: #F8E8EE;
+}
+.pink-footer {
+    background-color: rgb(222, 199, 203);
+}
+.white-text {
+    color: white;
+}
+.narrow-footer {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    width: 250px;
+    height: 400px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+}
+
+.card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-image: url('./img/img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-image1 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-image: url('./img/img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-image2 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-image: url('./img/img2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-image3 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-image: url('./img/img3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-image4 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-image: url('./img/img4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-image5 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-image: url('./img/img5.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-image6 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-image: url('./img/img6.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-image:hover {
+    transform: scale(0.98);
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+.heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+}
+
+.heading:hover {
+    cursor: pointer;
+}
+
+.author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.name:hover {
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------ */
+
+label {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 15px 10px 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: black;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label svg {
+    fill: hsl(0deg 100% 50%);
+    stroke: hsl(0deg 100% 50%);
+    animation: heartButton 1s;
+}
+
+@keyframes heartButton {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+input+label .action {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+}
+
+input+label .action span {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    transition: all .5s;
+}
+
+input+label .action span.option-1 {
+    transform: translate(0px, 0%);
+    opacity: 1;
+}
+
+input:checked+label .action span.option-1 {
+    transform: translate(0px, -100%);
+    opacity: 0;
+}
+
+input+label .action span.option-2 {
+    transform: translate(0px, 100%);
+    opacity: 0;
+}
+
+input:checked+label .action span.option-2 {
+    transform: translate(0px, 0%);
+    opacity: 1;
+}
+
+/* h */
